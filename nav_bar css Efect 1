@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav_bar">
+            <ul>
+                <li><a href="#" class="cool">Home</a></li>
+                <li><a href="#" class="cool">contactme</a></li>
+                <li><a href="#" class="cool">our service</a></li>
+                <li><a href="#" class="cool">Footer</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+
+Here is thee css//////
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    text-align: center;
+}
+li{
+    display: inline-block;
+}
+li a{
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 2rem;
+    display: block;
+}
+
+.cool::after{
+    content: " ";
+    display: block;
+    width: 0px;
+    height: 4px;
+    background-color: black;
+    transition: width .3s;
+}
+.cool:hover::after{
+    width: 100% ;
+    transition: width .3s;
+}
+
+
+
+
+
